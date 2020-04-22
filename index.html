@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>MiroirMagique³</title>
+	<meta charset="utf-8">
+	<meta content="MiroirMagique³" name="description">
+	<meta content="Matthew Mao" name="author"><!-- CSS -->
+	<link href="css/index.css" rel="stylesheet" type="text/css"><!-- Roboto Font -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700" rel="stylesheet"><!-- Weather Icons -->
+	<link href="css/weather-icons.min.css" rel="stylesheet" type="text/css"><!-- jQuery -->
+
+	<script src="javascript/bower_components/jquery/dist/jquery.min.js" type="text/javascript">
+	</script><!-- simpleWeather -->
+
+	<script src="javascript/bower_components/simpleWeather/jquery.simpleWeather.min.js" type="text/javascript">
+	</script><!-- annyang -->
+
+	<script src="javascript/bower_components/annyang/dist/annyang.min.js">
+	</script><!-- Javascript -->
+
+	<script defer src="javascript/index.js" type="text/javascript">
+	</script><!-- Animation Cheat Sheet -->
+	<link href="css/animate.css" rel="stylesheet">
+</head>
+<body>
+	<!--<div class="pause out" id="background"></div>
+    <div class="pause out" id="loading"><img alt="Désolé, cette image n&#39;est pas disponible." class="loading" src="../images/loading.gif"></div>-->
+	<p class="animated" id="time">C&#39;est le temps de chercher une montre! Je suis cassé!</p>
+	<div id="container">
+		<div id="weather">
+			La météo est indisponible.
+		</div>
+		<div id="calendar">
+			<center>
+				<table>
+					<tr>
+						<th colspan="7" id="cmonthyear"></th>
+					</tr>
+					<tr id="cdays">
+						<td></td>
+					</tr>
+				</table>
+			</center>
+		</div>
+	</div>
+	<p id="greeting">Vous êtes si beau que vous m'avez cassé!</p>
+</body>
+</html>

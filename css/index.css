@@ -1,0 +1,128 @@
+html * {
+	font-family: 'Roboto', sans-serif;
+	color: #f1f1f1;
+	border-color: #f1f1f1;
+	background-color: #000;
+}
+#time {
+	font-size: 80px;
+	font-weight: 300;
+	margin-right: auto;
+	margin-bottom: 8px;
+	margin-left: auto;
+	text-align: center;
+}
+#container {
+	width: 95%;
+	height: 70em;
+	margin-right: auto;
+	margin-left: auto;
+}
+#weather {
+	display: block;
+	float: left;
+	width: 50%;
+	height: auto;
+	margin-right: auto;
+	margin-bottom: 4px;
+	margin-left: auto;
+}
+#weatherhead {
+	font-size: 32px;
+	font-weight: 400;
+	margin-top: 0;
+}
+.weathercontent {
+	font-size: 24px;
+	font-weight: 300;
+}
+#lastup {
+	font-size: 12px;
+	font-weight: 300;
+}
+#calendar {
+	display: block;
+	float: right;
+	width: 50%;
+	height: auto;
+	margin-right: auto;
+	margin-left: auto;
+}
+#cmonthyear {
+	font-size: 32px;
+}
+#cdays {
+	text-align: center;
+	vertical-align: middle;
+}
+.cdays {
+	font-size: 24px;
+	font-weight: 300;
+	column-width: 60px;
+}
+.cdates {
+    text-align: center;
+	vertical-align: middle;
+	font-size: 24px;
+	font-weight: 300;
+	height: 56px;
+}
+.ctoday {
+	font-weight: 600;
+	color: aqua;
+	border-width: 2px;
+	border-style: solid;
+	border-color: dodgerblue;
+	border-radius: 50%;
+}
+#greeting {
+	font-size: 64px;
+	font-weight: 300;
+	text-align: center;
+}
+#background {
+	position: absolute;
+	z-index: 1;
+	width: 100%;
+	height: 100%;
+	opacity: 1;
+	background-color: #000;
+}
+#loading {
+	position: absolute;
+	z-index: 2;
+	top: 50%;
+	left: 50%;
+	width: 300px;
+	height: 300px;
+	margin-top: -150px;
+	margin-left: -150px;
+}
+@keyframes out {
+	to {
+		opacity: 1;
+	}
+}
+.in {
+	animation: fadeIn .5s ease-in 1 forwards;
+	animation-name: in;
+	animation-duration: 1s;
+	opacity: 0;
+}
+@keyframes out {
+	to {
+		opacity: 0;
+	}
+}
+.out {
+	animation: fadeOut .5s ease-out 1 forwards;
+	animation-name: out;
+	animation-duration: 1s;
+	opacity: 1;
+}
+.pause {
+	animation-play-state: paused;
+}
+.hide {
+	display: none;
+}
